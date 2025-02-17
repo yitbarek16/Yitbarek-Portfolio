@@ -1,126 +1,516 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <title>Yitbarek Tesfaye Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-light: #f8f9fa;
+            --bg-dark: #2c2c2c;
+            --text-light: rgb(13, 63, 67);
+            --text-dark: #f1f1f1;
+            --primary-light:rgb(64, 78, 94);
+            --primary-dark:rgb(16, 53, 56);
+            --bg-image-light: url('n.jpg'); /* Replace with your light background image */
+            --bg-image-dark: url('sea.jpg'); /* Replace with your dark background image */
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Clarity !</a>
-					</header>
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="generic.html">projects</a></li>
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="mailto:yitbarek.tesfayee@gmail.com"><span>Gmail</span></a></li>
-							<li><a href="https://t.me/yitbarek2" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
-							<li><a href="https://www.linkedin.com/in/yitbarek-tesfaye-1b6939324/" ><span>in</span></a></li>
-							<li><a href="https://github.com/yitbarek16" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: var(--bg-image-light) no-repeat center center / cover;
+            color: var(--text-light);
+            transition: background 0.3s, color 0.3s;
+        }
+    
+        .dark-theme {
+            --bg-light: #2c2c2c;
+            --bg-dark: #f8f9fa;
+            --text-light: #f1f1f1;
+            --text-dark: #333;
+            --primary-light: rgb(53, 160, 184);
+            --primary-dark: rgb(72, 155, 213);
+            --bg-image-light: url('sea.jpg');
+            --bg-image-dark: url('n.jpg');
+        }
+    
+        #intro {
+            padding: 100px 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.21); /* Semi-transparent overlay */
+        }
+    
+        #intro h1 {
+            font-style: arial;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            color: var(--text-light);
+        }
+    
+        #intro p {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            color: var(--text-light);
+        }
 
-				<!-- Main -->
-					<div id="main">
+        #intro .btn {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            background: var(--primary-light);
+            color: white;
+            border: none;
+            transition: background 0.3s;
+        }
 
-						<!-- Post -->
-						<section class="posts">
-							<article>
-								<header>
-									
-									<h2>A Tableau Dashboard</h2>
-								</header>
-								<a href="https://public.tableau.com/app/profile/yitbarek.tesfaye/viz/RevenueInsightsandMarketTrendsDashboard/Dashboard1?publish=yes" class="image fit"><img src="images/tab1.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://public.tableau.com/app/profile/yitbarek.tesfaye/viz/RevenueInsightsandMarketTrendsDashboard/Dashboard1?publish=yes" class="button">view project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<h2>A Tableau Dashboard</h2>
-								</header>
-								<a href="https://public.tableau.com/views/Tableauproject2_17302248664450/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="image fit"><img src="images/Dashboard 1.png" alt="" /></a>
-				
-								<ul class="actions special">
-									<li><a href="https://public.tableau.com/views/Tableauproject2_17302248664450/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="button">view project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									
-									<h2>A Tableau Dashboard</h2>
-								</header>
-								<a href="https://public.tableau.com/views/Book3_17305789302610/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="image fit"><img src="images/dash.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://public.tableau.com/views/Book3_17305789302610/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="button">view project</a></li>
-								</ul>
-							</article>
-							<article>
-							
-								<header>
-									<h2>An Excel Projects</h2>
-								</header>
-								<a href="https://github.com/yitbarek16/Data-Analysis-Projects/tree/6fb86ffa2356be9d4ecfb091f0b2ce144d1d9a91/Excel%20project" class="image fit"><img src="images/project3.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/yitbarek16/Data-Analysis-Projects/tree/6fb86ffa2356be9d4ecfb091f0b2ce144d1d9a91/Excel%20project" class="button">view project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-							
-									<h2>A SQL Projects</h2>
-								</header>
-								
-								<ul class="actions special">
-									<li><a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/SQL%20projects" class="button">view project</a></li>
-								</ul>
-							</article>
-							
-							<article>
-								<header>
-									<h2>A Python Projects</h2>
-								</header>
-								
-								<ul class="actions special">
-									<li><a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Python%20Projects" class="button">view project</a></li>
-								</ul>
-							</article>
-						</section>
+        #intro .btn:hover {
+            background: var(--primary-dark);
+        }
 
-					</div>
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
 
-				
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; yitbarek</li></ul>
-					</div>
+        .social-links a {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-light);
+            z-index: 999;
+            transition: color 0.3s;
+        }
 
-			</div>
+        .theme-toggle:hover {
+            color: var(--primary-dark);
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        #projects {
+            padding: 60px 20px;
+        }
 
-	</body>
+        #projects h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        #projects .card {
+            transition: transform 0.3s;
+        }
+
+        #projects .card:hover {
+            transform: translateY(-10px);
+        }
+
+        #contact {
+            padding: 60px 20px;
+        }
+
+        #contact h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        #contact .form-control {
+            border-radius: 5px;
+        }
+
+        #contact .btn {
+            background-color: var(--primary-light);
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        #contact .btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .tools-section {
+            background: rgba(52, 56, 59, 0.05);
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .tools-section h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .profile-photo {
+            width: 150px; /* Adjust size as needed */
+            height: 150px;
+            border-radius: 50%; /* Makes it round */
+            object-fit: cover;
+            border: 4px solid var(--primary-light);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        
+        .title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        
+        .profile-photo:hover {
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="theme-toggle">
+        <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="container mt-4">
+        <!-- Intro -->
+        <div id="intro" class="my-5">
+            <img src="pro.jpg" alt="Yitbarek Tesfaye" class="profile-photo">
+
+            <h1>YITBAREK TESFAYE</h1>
+            <p class="title">Data Analyst | Virtual Assistant | Business Intelligence Analyst | Machine Learning Expert</p>
+            <p class="subtitle">Turning data into actionable insights and streamlining operations for measurable impact.</p>
+            <a href="#contact" class="btn mt-3">Contact Me</a>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/your-profile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-profile" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/your-profile" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:your-email@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="tools-section">
+            <h2>My Toolkit</h2>
+            <div class="d-flex justify-content-around flex-wrap">
+                <div class="text-center">
+                    <i class="fas fa-database fa-3x text-primary"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-chart-line fa-3x text-success"></i>
+                    <p>Tableau</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-file-excel fa-3x text-warning"></i>
+                    <p>Excel</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-code fa-3x text-info"></i>
+                    <p>Python</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-google fa-3x text-danger"></i>
+                    <p>Google Workspace</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-microsoft fa-3x text-primary"></i>
+                    <p>Microsoft Office</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Section -->
+    <div id="projects">
+        <h2>My Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="p1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">UK Milk Trade Analysis (2015)</h5>
+                        <p class="card-text">Summary: Investigated the UK’s milk and cream trade data to assess trade balance and partner relationships.<br>
+                            
+                            Tools/Tech Used: Python, Pandas, UN Comtrade Data. <br>
+                            
+                            Key Findings:<br>
+                            
+                            - Achieved a $100M trade surplus with $265M in exports and $156M in imports.<br>
+                            - Ireland was the UK’s main trade partner, accounting for the majority of exports.<br>
+                            - Identified 16 key customers responsible for 75% of exports.</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Python%20Projects/project4" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="ww.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Deaths by Tuberculosis in BRICS Countries (2013)</h5>
+                        <p class="card-text">Summary: Analyzed tuberculosis mortality data in BRICS and Portuguese-speaking countries to identify disparities.
+                            <br>
+                            Tools/Tech Used: Python, Pandas, Matplotlib, WHO Data
+                            <br>
+                            Key Insights:<br>
+                            
+                            - India and China had the highest TB deaths (240,000 and 41,000, respectively).<br>
+                            - Guinea-Bissau and Timor-Leste had the highest death rates (70+ per 100,000).<br>
+                            - Portugal and Brazil had the lowest death rates (2.2 per 100,000).</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Python%20Projects/project1" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="p3.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">GDP and Life Expectancy Correlation (2013)</h5>
+                        <p class="card-text">Summary: Explored the relationship between GDP and life expectancy to highlight socio-economic disparities.<br>
+                            
+                            Tools/Tech Used: Python, Pandas, Matplotlib, World Bank Data<br>
+                            
+                            Key Insights:<br>
+                            
+                            - Found a moderate positive correlation (r = 0.5).<br>
+                            - Outliers showed that wealth isn’t the only determinant—healthcare access and social factors matter.</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Python%20Projects/project3" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="p4.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Data Pipeline and Dashboard</h5>
+                        <p class="card-text">
+                            Summary: Built an end-to-end data pipeline for an e-commerce business and created a dashboard for data-driven decision-making.<br>
+                            
+                            Tools/Tech Used: Python, MySQL, Pandas, Tableau (for visualization)<br>
+                            
+                            Process:<br>
+                            
+                            - Cleaned and preprocessed transactional data.<br>
+                            - Computed key metrics like total revenue and AOV.<br>
+                            - Loaded data into MySQL and segmented customers for marketing insights.
+                            </p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Python%20Projects/data%20pipeline(ecommerce)" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="e1.jpeg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">IBM HR Analytics Employee Attrition Analysis</h5>
+                        <p class="card-text">Conducted Exploratory Data Analysis (EDA) on IBM's employee attrition data to uncover trends and correlations affecting employee satisfaction.<br>
+
+                            Tools/Tech Used:
+                            MicrosoftExcel,Data Visualization,report<br>
+                            
+                            Key Findings:<br>
+                            
+                            - Identified a strong positive correlation between total working years and monthly income.<br>
+                            - Highlighted attrition rates varying significantly across job roles, particularly in sales.<br>
+                            - Provided actionable recommendations to enhance employee retention and satisfaction.</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Excel%20project/EDA(IBM)" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="e2.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee Sales</h5>
+                        <p class="card-text">Summary:
+                            Created an interactive Excel dashboard to analyze coffee sales data, facilitating insights into sales trends and customer behaviors.<br>
+                            
+                            Tools/Tech Used:
+                            Excel, Data Visualization, Data Extraction<br>
+                            
+                            Key Findings:<br>
+                            
+                            - Visualized sales trends over time, highlighting seasonal patterns.<br>
+                            - Identified top customers and products contributing to sales.<br>
+                            - Enabled data-driven decision-making for improved sales strategies.</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Excel%20project/coffee%20sales" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="e3.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mcdonald Sales and Bike Sales Dashboards(2-different dashboards)</h5>
+                        <p class="card-text">Created basic Excel dashboards to analyze McDonald's South America sales and bike sales data, focusing on key performance metrics and customer demographics.<br>
+
+                            Tools/Tech Used:
+                            Excel, Data Visualization<br>
+                            
+                            Key Findings:<br>
+                            
+                            - Highlighted total sales, profit, and customer satisfaction for McDonald's, driving strategic insights.<br>
+                            - Explored bike sales trends based on demographics, income, and age, offering actionable insights for improved customer engagement.</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/Excel%20project" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="d1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dashboards using BI tools</h5>
+                        <p class="card-text">- Airbnb Dashboard: Visualized price trends, revenue patterns, and property distribution to help optimize pricing and track market trends.<br>
+                            - COVID-19 Dashboard: Analyzed global cases, deaths, and infection rates, offering insights for public health decisions.</p>
+                        <a href="https://public.tableau.com/app/profile/yitbarek.tesfaye/vizzes" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="s1.jpeg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nashville Housing Data Cleaning</h5>
+                        <p class="card-text">
+                            Summary: Performed data cleaning on a real estate dataset to improve data consistency and accuracy.<br>
+                            Tools/Tech Used: SQL (Microsoft SQL Server)<br>
+                            Key Insights:<br>
+
+                            Standardized date formats for better time-based analysis.<br>
+                            Filled missing property addresses using self-joins.<br>
+                            Split and standardized address components for consistency.<br>
+                            Removed duplicate records to ensure data integrity.<br>
+                            Converted categorical data into appropriate formats for analysis.
+                            </p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/SQL%20projects/sql%20project1" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="s2.jpeg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">COVID-19 Data Exploration</h5>
+                        <p class="card-text">Summary: Analyzed COVID-19 trends to uncover insights on infection and mortality rates across different countries.
+                            <br>Tools/Tech Used: MySQL (Joins, CTEs, Temp Tables, Window Functions, Aggregate Functions, Views, Data Type Conversion)
+                            <br>Key Insights:<br>
+                            
+                            Calculated death and infection rates.<br>
+                            Identified high-risk countries.<br>
+                            Used advanced SQL techniques for trend analysis.</p>
+                        <a href="https://github.com/yitbarek16/Data-Analysis-projects/tree/main/SQL%20projects/sql%20project2" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="mt-5">
+        <h2>Contact Me</h2>
+        <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    
+        <!-- Success Message -->
+        <p id="response-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;"></p>
+    </div>
+    
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents default form submission
+    
+            const form = event.target;
+            const formData = new FormData(form);
+    
+            fetch("https://formspree.io/f/mvgzrowz", {
+                method: "POST",
+                body: formData,
+                headers: { "Accept": "application/json" }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    document.getElementById("response-message").innerText = "Message Sent Successfully!";
+                    document.getElementById("response-message").style.display = "block"; // Show success message
+                    form.reset(); // Clear form fields
+                } else {
+                    document.getElementById("response-message").innerText = "Error sending message. Please try again!";
+                    document.getElementById("response-message").style.color = "red";
+                    document.getElementById("response-message").style.display = "block";
+                }
+            })
+            .catch(error => {
+                document.getElementById("response-message").innerText = "Error sending message. Please try again!";
+                document.getElementById("response-message").style.color = "red";
+                document.getElementById("response-message").style.display = "block";
+            });
+        });
+    </script>
+    
+
+    <!-- JavaScript -->
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+            themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        });
+    </script>
+</body>
 </html>
